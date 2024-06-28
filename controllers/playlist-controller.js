@@ -27,7 +27,7 @@ export const playlistController = {
     const playlistId = request.params.playlistid;
     const trackId = request.params.trackid;
     console.log(`Deleting Track ${trackId} from Playlist ${playlistId}`);
-    await trackStore.deleteTrack(request.params.trackId);
+    await trackStore.deleteTrack(request.params.trackid);
     response.redirect("/playlist/" + playlistId);
   },
 };
